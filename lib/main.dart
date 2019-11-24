@@ -25,16 +25,15 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-  String animationName='Smile';
+class _MyHomePageState extends State<MyHomePage> {int _counter = 0;
+  String animationName='Smaile';
   void _incrementCounter() {
 
     setState(() {
       if(animationName=='Smile'){
         animationName='Frown';
       }else{
-        animationName='Smile';
+        animationName='Smaile';
       }
     });
   }
@@ -47,8 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Container(
-          width: 300,
-          height: 300,
+          width: 400,
+          height: 400,
           child: FlareActor(
             'assets/smaily.flr',alignment: Alignment.center,
             fit: BoxFit.contain,
